@@ -14,7 +14,6 @@ function App() {
               <li>Home</li>
             </Link>
             <Link to="/library">
-              {" "}
               <li>Library</li>
             </Link>
           </ul>
