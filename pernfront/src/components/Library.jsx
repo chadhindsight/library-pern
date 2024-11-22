@@ -6,7 +6,7 @@ export default function Library() {
   useEffect(() => {
     // fetch book json data from backend and update state to include that data
     const fetchData = async () => {
-      const response = await fetch("/api/books/");
+      const response = await fetch("/api/books");
       const json = await response.json();
       setBooks(json);
     };
