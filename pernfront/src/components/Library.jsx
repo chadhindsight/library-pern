@@ -19,7 +19,7 @@ export default function Library() {
         {books.map((book, index) => (
           <li key={index} style={{ paddingBottom: "25px" }}>
             <div>{book.name}</div>
-            <div>{}</div>
+            <div>{book.author}</div>
             <div>{book.year_published}</div>
           </li>
         ))}
