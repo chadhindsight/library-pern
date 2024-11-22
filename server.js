@@ -12,5 +12,5 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.listen(7005, () => {
-    console.log('Server is running on port 7005')
+    console.log('Server is running on port 7004')
 })
