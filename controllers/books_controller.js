@@ -1,9 +1,9 @@
-const books = require('express').Router()
+const Books = require('express').Router()
 const db = require('../models')
 const { Book } = db
 
 // GET ALL BOOKS
-books.get('/', async (req, res) => {
+Books.get('/', async (req, res) => {
     try {
         const foundBooks = await Book.findAll()
         res.status(200).json(foundBooks)
@@ -13,4 +13,4 @@ books.get('/', async (req, res) => {
     }
 })
 
-module.exports = books
+module.exports = Books;

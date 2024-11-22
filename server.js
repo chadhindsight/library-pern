@@ -16,6 +16,6 @@ app.use(express.static(path.join(__dirname, '../build')));
 const booksController = require('./controllers/books_controller');
 app.use('/api/books', booksController);
 
-app.listen(7005, () => {
+app.listen(7004, () => {
     console.log('Server is running on port 7004')
 })
